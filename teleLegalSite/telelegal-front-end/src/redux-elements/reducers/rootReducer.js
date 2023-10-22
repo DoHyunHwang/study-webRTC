@@ -3,8 +3,8 @@ import callStatusReducer from "./callStatusReducer";
 import streamsReducer from "./streamsReducer";
 
 const rootReducer = combineReducers({
-    callStatus: callStatusReducer,
-    streams: streamsReducer,
-})
+  callStatus: callStatusReducer,
+  streams: streamsReducer,
+});
 
-export default rootReducer
+export default rootReducer;
