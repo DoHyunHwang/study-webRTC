@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import socketConnection from "./webRTCutilities/socketConnection";
+// import socketConnection from "./webRTCutilities/socketConnection";
 import MainVideoPage from "./videoComponents/MainVideoPage";
 import ProDashboard from "./siteComponents/ProDashboard";
 import ProMainVideoPage from "./videoComponents/ProMainVideoPage";

@@ -9,7 +9,7 @@ const initState = {
   haveCreatedOffer: false,
 };
 
-export default (state = initState, action) => {
+const callStatusReducer = (state = initState, action) => {
   if (action.type === "UPDATE_CALL_STATUS") {
     const copyState = { ...state };
     copyState[action.payload.prop] = action.payload.value;
@@ -20,3 +20,5 @@ export default (state = initState, action) => {
     return state;
   }
 };
+
+export default callStatusReducer;
