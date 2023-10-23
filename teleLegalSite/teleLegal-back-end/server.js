@@ -12,8 +12,8 @@ app.use(cors()); //this will open our Express API to ANY domain
 app.use(express.static(__dirname + "/public"));
 app.use(express.json()); //this will allow us to parse json in the body with the body parser
 
-// const key = fs.readFileSync('./certs/cert.key'); //for local development https
-// const cert = fs.readFileSync('./certs/cert.crt'); //for local development https
+// const key = fs.readFileSync('./certs/key.pem'); //for local development https
+// const cert = fs.readFileSync('./certs/cert.pem'); //for local development https
 
 // const expressServer = https.createServer({key, cert}, app); //for local development https
 const expressServer = http.createServer({}, app);

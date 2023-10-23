@@ -7,9 +7,21 @@ import ProMainVideoPage from "./videoComponents/ProMainVideoPage";
 
 const Home = () => <h1>Hello, Home page</h1>;
 
+const style = {
+  display: "flex",
+  justifyContent: "space-around",
+  paddingLeft: "10px",
+};
+
 function App() {
   return (
     <BrowserRouter>
+      <div style={style}>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/join-video"}>joinVideo</Link>
+        <Link to={"/dashboard"}>dashboard</Link>
+        <Link to={"/join-video-pro"}>joinVideoPro</Link>
+      </div>
       <Routes>
         <Route exact path="/" Component={Home} />
         <Route path="/join-video" Component={MainVideoPage} />
